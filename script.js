@@ -22,6 +22,7 @@ async function buscarCep() {
       `;
     }
   } catch (error) {
+    console.error("Erro ao buscar o CEP:", error);
     resultado.innerHTML = "<p class='erro'>Erro ao buscar o CEP. Tente novamente.</p>";
   }
 }
